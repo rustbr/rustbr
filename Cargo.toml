@@ -1,0 +1,37 @@
+[package]
+authors = ["Alan Hoffmeister <alanhoffmeister@gmail.com>"]
+build = "build.rs"
+include = ["data"]
+name = "rustbr"
+version = "0.1.0"
+license = "ISC"
+
+[build-dependencies]
+includedir_codegen = "0.2.1"
+
+[dependencies]
+chrono = "0.2.22"
+includedir = "0.2.1"
+iron = "0.3.0"
+jwt = "0.4.0"
+logger = "0.0.3"
+params = "0.2.2"
+persistent = "0.1.0"
+phf = "0.7.14"
+pwhash = "0.1.1"
+r2d2 = "0.7.0"
+r2d2_postgres = "0.10.1"
+router = "0.1.1"
+rust-crypto = "0.2.36"
+serde = "0.7.8"
+serde_json = "0.7.1"
+time = "0.1.35"
+timeit = "0.1.2"
+
+[dependencies.postgres]
+features = ["uuid", "chrono"]
+version = "0.11.8"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.2.2"
